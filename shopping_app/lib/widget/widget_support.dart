@@ -9,7 +9,7 @@ class AppWidget {
         fontFamily: 'Poppins');
   }
 
-  static TextStyle HeadLineTextFeildStyle() {
+  static TextStyle HeadlineTextFeildStyle() {
     return TextStyle(
         color: Colors.black,
         fontSize: 24.0,

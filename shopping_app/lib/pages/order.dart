@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:fooddeliveryapp/service/database.dart';
-import 'package:fooddeliveryapp/service/shared_pref.dart';
-import 'package:fooddeliveryapp/widget/widget_support.dart';
+import 'package:shopping_app/service/database.dart';
+import 'package:shopping_app/service/shared_pref.dart';
+import 'package:shopping_app/widget/widget_support.dart';
 
 class Order extends StatefulWidget {
   const Order({super.key});
@@ -104,7 +104,7 @@ setState(() {
                                     style: AppWidget.semiBoldTextFeildStyle(),
                                   ),
                                   Text(
-                                  "\$"+ ds["Total"],
+                                  ds["Total"] +  "\LKR",
                                     style: AppWidget.semiBoldTextFeildStyle(),
                                   )
                                 ],

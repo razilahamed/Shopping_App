@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:fooddeliveryapp/service/auth.dart';
-import 'package:fooddeliveryapp/service/shared_pref.dart';
+import 'package:shopping_app/service/auth.dart';
+import 'package:shopping_app/service/shared_pref.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:random_string/random_string.dart';
 
@@ -269,7 +269,7 @@ class _ProfileState extends State<Profile> {
             ),
             GestureDetector(
               onTap: (){
-                AuthMethods().deleteuser();
+                AuthMethods().deleteUser();
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.0),

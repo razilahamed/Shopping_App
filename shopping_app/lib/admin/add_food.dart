@@ -75,7 +75,7 @@ class _AddFoodState extends State<AddFood> {
         centerTitle: true,
         title: Text(
           "Add Item",
-          style: AppWidget.HeadLineTextFeildStyle(),
+          style: AppWidget.HeadlineTextFeildStyle(),
         ),
       ),
       body: SingleChildScrollView(

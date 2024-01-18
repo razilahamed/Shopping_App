@@ -3,10 +3,10 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
-import 'package:fooddeliveryapp/service/database.dart';
-import 'package:fooddeliveryapp/service/shared_pref.dart';
-import 'package:fooddeliveryapp/widget/app_constant.dart';
-import 'package:fooddeliveryapp/widget/widget_support.dart';
+import 'package:shopping_app/service/database.dart';
+import 'package:shopping_app/service/shared_pref.dart';
+import 'package:shopping_app/widget/app_constant.dart';
+import 'package:shopping_app/widget/widget_support.dart';
 import 'package:http/http.dart' as http;
 
 class Wallet extends StatefulWidget {
@@ -209,7 +209,7 @@ class _WalletState extends State<Wallet> {
 
   Future<void> makePayment(String amount) async {
     try {
-      paymentIntent = await createPaymentIntent(amount, 'INR');
+      paymentIntent = await createPaymentIntent(amount, 'LKR');
       //Payment Sheet
       await Stripe.instance
           .initPaymentSheet(

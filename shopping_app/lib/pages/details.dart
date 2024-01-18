@@ -8,7 +8,7 @@ class Details extends StatefulWidget {
   String image, name, detail, price;
   Details(
       {required this.detail,
-      required this.image,
+      required this.image,  
       required this.name,
       required this.price});
 
@@ -168,7 +168,7 @@ class _DetailsState extends State<Details> {
                       ),
                       Text(
                         "\$" + total.toString(),
-                        style: AppWidget.HeadLineTextFeildStyle(),
+                        style: AppWidget.HeadlineTextFeildStyle(),
                       )
                     ],
                   ),
